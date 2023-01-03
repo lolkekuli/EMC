@@ -1,0 +1,108 @@
+<!--
+ Quara Theme by OllieJW (https://olliejw.me)
+ License - https://olliejw.me/tos
+-->
+
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="./img/favicon.png">
+  <title>EMC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="MomentariyModder">
+  <meta name="description" content="">
+  <meta name="keywords" content="Minecraft, Mods">
+  <meta name="theme-color" content="#4bb4f1">
+
+  <!-- Edit this to change staff cards! -->
+
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="config.css">
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+    <div class="hero" id="hero">
+      <a href="#!"><h1 style="padding-top: 3%;"><img src="img/logo.png" width="45%"></h1></a>
+	<div class="feature2">
+      <a><img src="img/rus.jpg" width="10%"></a>	
+	  <a href="az.html"><img src="img/az.png" width="10%"></a>	
+	</div>
+    <div id="news">
+      <div class="news-card">
+      <strong><i class="fa-solid fa-scroll"></i> Конкурс на лучшую постройку школы №60!</strong>
+      <a>Приветсвуем тебя гость! Здесь ты можешь ознакомится с нашим конкурсом и поучаствовать в нём. Если ты заинтересован, внимательно прочитай текст ниже и зайдите к нам в дискорд сервер! (Если что посмотрите в интернете что это)</a>
+      </div>
+    </div>
+    <p> </p>
+	</div>
+  </header>
+  
+  <section class="dark" id="projects">
+    <div class="feature right">
+      <img src="img/screenshots/1.png" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong><i class="fa-solid fa-book"></i> Суть конкурса</strong>
+        <b>•</b> Вы должны построить хотя бы один квартал города, с своим дизайном и атмосферой в стиле современного города ( Минимум 3-4 здания )<br>
+        <b>•</b> Если у вас уже есть построенный вами мир, вы можете использовать его ( Если мир находится на атернос то мы можем зайти на ваш сервер и посмотреть ваши постройки так )<br>
+        <b>•</b> Конкурс действует до ?? ( Тоесть вы можете отправлять ваши постройки в наш дискорд сервер до ?? )		
+	  </p>
+    </div>
+  </section>
+  
+  <section class="light" id="projects">
+    <div class="feature left">
+      <img src="img/screenshots/2.png" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong><i class="fa-solid fa-receipt"></i> Правила</strong>
+        <b>•</b> Иметь аккаунт в дискорде<br>
+        <b>•</b> Нельзя при постройке брать здания с интернета ( Будет тщательно проверяться )<br>
+        <b>•</b> Не использовать моды и плагины ( За исключением World Edit )		
+	  </p>
+    </div>
+  </section>
+  
+  <section class="dark" id="projects">
+    <div class="feature right">
+      <img src="img/screenshots/rus.png" width="500px" class="enlarge">
+      <p class="enlarge">
+        <strong><i class="fa-solid fa-award"></i> Что же получит победитель?</strong>	
+		<b>•</b> Сертификат "Лучший майнкрафтер 60 школы"!
+	  </p>
+    </div>
+  </section>
+
+  <section class="light">
+    <h1><i class="fa-brands fa-discord"></i> Дискорд</h1>
+    <div class="buttons" id="social">
+      <a href="https://discord.gg/k2JfTu5X" class="btn"><i class="fa-solid fa-hand-pointer"></i> Кликнуть</a>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <a>&copy; 2022 {{server_name}}. Все права защищены.</br>{{server_name}} is not affiliated with Mojang Studios.</a>
+	<a><b><i class="fa-solid fa-users"></i> Авторы:</b> lolkekuli, Emincore, azyhantrop, MomentariyModder,Vilbucks</a>
+  </footer>
+  </script>
+  
+</body>
